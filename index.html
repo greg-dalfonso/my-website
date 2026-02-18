@@ -13,6 +13,7 @@
 
         p {
             font-size: 20px;
+            max-width: 800px;
         }
 
         ul {
@@ -20,36 +21,41 @@
             padding: 0;
         }
 
-        ul > li {
-            display: inline-block;
-            padding: 20px;
-        }
+
 
         a {
             text-decoration: none;
+            font-size: 24px;
         }
 
-        #name {
-            font-size: 64px;
+        #content {
             position: absolute;
-            width: 100%;
             text-align: center;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
-            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .badge-base {
+            margin-top: 72px;
         }
     </style>
+
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body>
 
-<div id="name" style="">
-    <h1>Greg Dalfonso</h1>
+<div id="content" style="">
 
-    <p>Software Engineer with professional experience in <br> JavaScript, Typescript, Node.js and Golang.</p>
+    <h1>Gregory Dalfonso</h1>
+    <p>Full Stack Engineer with 9 years of professional experience building complex user interfaces and the supporting API layers needed to optimize data delivery and support frontend requirements.</p>
 
-    <ul>
-        <li><a href="https://www.linkedin.com/in/greg-dalfonso-9ab289120/">LinkedIn</a></li>
-    </ul>
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="gregdalfonso" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/gregdalfonso?trk=profile-badge"></a></div>
+
 </div>
 
 </body>
