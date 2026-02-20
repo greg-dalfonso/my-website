@@ -7,49 +7,70 @@
     <title>Gregory Dalfonso</title>
 
     <style>
+        html {
+            height: 100%;
+            font-family: "Robot", sans-serif;
+        }
 
-        h1 {
-            font-size: 64px;
+
+        body {
+            background: rgb(245, 245, 247);
+            display: flex;
+            place-content: center;
+            height: 100%;
             margin: 0;
         }
 
-        p {
-            font-size: 20px;
-            max-width: 800px;
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+            padding-top: 24px;
         }
 
         a {
             text-decoration: none;
-            font-size: 20px;
+            padding-top: 24px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #333;
         }
 
         #content {
             position: absolute;
             text-align: center;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
             display: flex;
             align-items: center;
             align-content: center;
             flex-direction: column;
+            background: white;
+            top: 20%;
+            padding: 36px 24px;
+            border-radius: 16px;
+            box-shadow: 2px 4px 12px #00000014;
+            max-width: 750px;
+            margin: 24px;
         }
 
-        .badge-base {
-            margin: 16px;
-        }
     </style>
 
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div id="content" style="">
-
+    <img class="badge-base" src="self_portrait.png" alt="avatar">
     <h1>Gregory Dalfonso</h1>
-    <p>Full Stack Engineer with 9 years of professional experience building complex user interfaces and the supporting API layers needed to optimize data delivery and support frontend requirements.</p>
-    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="gregdalfonso" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/gregdalfonso?trk=profile-badge"></a></div>
-    <a href="https://linkedin.com/in/gregdalfonso" target="_blank" class="badge-base">linkedin.com/in/gregdalfonso</a>
+    <p>Full-stack developer with 9 years of professional experience building complex user interfaces and the supporting API layers needed to optimize data delivery and support frontend requirements.</p>
+    <a href="https://linkedin.com/in/gregdalfonso" target="_blank">linkedin.com/in/gregdalfonso</a>
 </div>
 
 
